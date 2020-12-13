@@ -197,7 +197,6 @@ extension MultiSlider {
         let sliderValue = valueLabelFormatter.string(from: NSNumber(value: Double(labelValue)))!
         let hours = (Int(sliderValue)!) / 60
         let minutes = String(format: "%02d", (Int(sliderValue)!) % 60)
-        print("\(hours):\(minutes)")
         valueLabels[i].text = "\(hours):\(minutes)"
     }
 
